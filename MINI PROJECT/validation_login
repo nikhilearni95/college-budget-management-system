@@ -1,0 +1,16 @@
+hod,principal
+
+
+session_start();
+
+if(!isset(S_SESSION["Key"])){
+	header("Location:index.php");
+}
+if($_SESSION["type_user"] == "principal"){
+	header("Location:principal.php")
+}else if($_SESSION["type_user"] == "admin"){
+	header("Location:admin.php")
+}
+:::
+:::
+:::
